@@ -1,0 +1,14 @@
+{
+  "name": "kodhuset",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Projektsidan kodhuset.se",
+  "type": "module",
+  "scripts": {
+    "bygg": "node bygg.mjs",
+    "visa": "node bygg.mjs --visa"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

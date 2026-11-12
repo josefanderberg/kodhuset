@@ -1,0 +1,52 @@
+{
+  "url": "https://kodhuset.se",
+  "namn": "Kodhuset",
+  "person": "Josef Anderberg",
+  "titel": "Systemutvecklare .NET under utbildning",
+  "ort": "Växjö",
+  "beskrivning": "Kodhuset är Josef Anderbergs projektsida. Här samlar jag det jag har byggt: webb, appar och API:er, från eventkartan VADKUL med 32 000 användare i månaden till små experiment.",
+
+  "hero": {
+    "status": "Söker LIA2 14 december 2026 - 28 maj 2027",
+    "rubrik": "Jag bygger webb, appar och API:er som folk faktiskt använder.",
+    "text": "Jag heter Josef och studerar till systemutvecklare .NET i Växjö. Här samlar jag det jag har byggt, från en eventkarta med **32 000 användare den senaste månaden** till små experiment som bara skulle testas."
+  },
+
+  "om": {
+    "stycken": [
+      "Jag studerar till systemutvecklare .NET på TUC Yrkeshögskola i Växjö. Vid sidan av studierna har jag byggt och driver **VADKUL**, där jag ansvarar för allt från arkitektur och API:er till säkerhet, tester och drift.",
+      "Innan jag började koda tog jag en kandidatexamen i affärsutveckling och jobbade med försäljning och i Försvarsmakten. Därför tänker jag gärna på vad en lösning ska ge kunden, inte bara på hur den ska byggas.",
+      "Under 2026 gjorde jag LIA 1 på Measure & Change, och från december gör jag LIA2 och examensarbete under samma period. Jag ser helst att det blir början på en anställning."
+    ],
+    "citat": {
+      "text": "Han fokuserar inte bara på hur en lösning ska byggas, utan också på vilket värde den skapar för kunder och företaget.",
+      "avsandare": "Sarah Nilsson, vd på Measure & Change"
+    }
+  },
+
+  "kompetenser": [
+    { "rubrik": "Backend och API:er", "text": "C#, ASP.NET Core Web API, Entity Framework Core, SQL Server, REST, Swagger/OpenAPI och integrationer" },
+    { "rubrik": "Säkerhet", "text": "ASP.NET Core Identity, JWT, tvåfaktorsinloggning, rollbaserad åtkomst, kryptering och OWASP Top 10" },
+    { "rubrik": "Frontend och appar", "text": "React, Next.js, TypeScript, Blazor, React Native, Swift, HTML/CSS och Tailwind" },
+    { "rubrik": "Arkitektur och drift", "text": "Delar upp system i API, delade bibliotek och tester. Docker, Firebase och CI/CD i GitHub Actions och Azure DevOps" }
+  ],
+
+  "erfarenhet": [
+    { "datum": "2026 - nu", "rubrik": "Grundare och utvecklare", "plats": "VADKUL", "text": "Eventkarta för hela Sverige på webben och i App Store." },
+    { "datum": "mars - juni 2026", "rubrik": "Utvecklare, LIA 1", "plats": "Measure & Change, Växjö", "text": "Klimatrapport för årsredovisningen, en ny läsroll genom hela stacken och en Azure Function i Docker som jämför klimatdata och larmar i Teams. .NET, SQL Server, Azure, React och Vue." },
+    { "datum": "2025 - 2027", "rubrik": "Systemutvecklare .NET", "plats": "TUC Yrkeshögskola, Växjö", "text": "C#, .NET, React, databaser, IT-säkerhet och TDD." },
+    { "datum": "2020 - nu", "rubrik": "Säljare", "plats": "Swedol", "text": "B2B-försäljning och teknisk rådgivning." },
+    { "datum": "2015 - 2018", "rubrik": "Fil. kand. Enterprising and Business Development", "plats": "Linnéuniversitetet" },
+    { "datum": "2013 - 2019", "rubrik": "Spaningssoldat", "plats": "Försvarsmakten, K3 och Hemvärnet" }
+  ],
+
+  "kontakt": {
+    "text": "Hör gärna av dig om LIA, jobb eller om du bara vill prata om något du har sett här.",
+    "epost": "josef.anderberg.syne25lin@edu.tucsweden.se",
+    "telefon": "",
+    "lankar": [
+      { "etikett": "LinkedIn", "url": "https://linkedin.com/in/josef-anderberg-290651119" },
+      { "etikett": "GitHub", "url": "https://github.com/josefanderberg" }
+    ]
+  }
+}

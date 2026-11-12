@@ -1,0 +1,190 @@
+{
+  "projekt": [
+    {
+      "slug": "vadkul",
+      "utvald": true,
+      "namn": "VADKUL",
+      "kort": "Eventkarta för hela Sverige, på webben och i App Store.",
+      "ar": "2026 - nu",
+      "roll": "Grundare och utvecklare",
+      "status": "I drift",
+      "farg": "#1d5fa8",
+      "bild": "vadkul.jpg",
+      "bildAlt": "Startsidan på vadkul.se med en karta över Stockholm och en ruta som visar hur många event som finns den närmaste veckan.",
+      "fakta": [
+        { "varde": "32 000", "text": "användare senaste månaden" },
+        { "varde": "45+", "text": "källor hämtas varje natt" },
+        { "varde": "1 700+", "text": "automatiska tester" },
+        { "varde": "1 400+", "text": "commits" }
+      ],
+      "beskrivning": [
+        "VADKUL är en eventkarta för hela Sverige. Du trycker var som helst på kartan och ser vad som händer just där. Med ett gratis konto kan du lägga upp egna event och spara favoriter.",
+        "Jag har byggt allt själv, från arkitektur och API:er till säkerhet och drift. Varje natt hämtar en egen pipeline nya event från fler än 45 externa källor, så kartan är aktuell utan att någon behöver mata in något för hand."
+      ],
+      "punkter": [
+        "**Arkitektur:** webb, molnfunktioner och app är separata delar som delar ett gemensamt TypeScript-kontrakt.",
+        "**Integrationer:** nattlig hämtning från 45+ källor, plus betalningar med Stripe och push-notiser.",
+        "**Säkerhet och kvalitet:** 700+ rader säkerhetsregler med rollbaserad åtkomst, 1 700+ tester och CI/CD i GitHub Actions.",
+        "**Resultat:** runt 1 000 användare per dag och stadigt växande trafik från Google."
+      ],
+      "teknik": ["Next.js", "TypeScript", "React Native", "Firebase", "Cloud Functions", "SQLite", "Stripe", "GitHub Actions"],
+      "lankar": [
+        { "etikett": "Besök vadkul.se", "url": "https://vadkul.se" },
+        { "etikett": "App Store", "url": "https://apps.apple.com/se/app/id6820135961" },
+        { "etikett": "Koden på GitHub", "url": "https://github.com/josefanderberg/VADKUL" }
+      ]
+    },
+    {
+      "slug": "spellup",
+      "namn": "Spellup",
+      "kort": "NFC-kortspel för iPhone där vardagssaker blir monster som slåss.",
+      "ar": "2026",
+      "roll": "Eget projekt",
+      "status": "Under utveckling",
+      "farg": "#7c3aed",
+      "beskrivning": [
+        "I Spellup sätter du NFC-klistermärken på kort, leksaker och vardagssaker. När du blippar dem med telefonen blir de monster som du kan samla och låta slåss mot varandra.",
+        "Arbetet styrs av tickets och milstolpar på GitHub, från version 1.0 i App Store vidare till onlineläge, minispel och en butik."
+      ],
+      "punkter": [
+        "Byggt i Swift för iPhone, med en Android-version på gång.",
+        "Taggarna signeras, så att det inte går att skapa falska kort.",
+        "Egen webbplats med integritetspolicy och support inför lanseringen."
+      ],
+      "teknik": ["Swift", "Core NFC", "Firebase", "Android"],
+      "lankar": []
+    },
+    {
+      "slug": "prenav",
+      "namn": "PreNav",
+      "kort": "Chrome-tillägg som navigerar innan du hinner trycka Enter.",
+      "ar": "2026",
+      "roll": "Eget projekt",
+      "status": "Klar",
+      "farg": "#6366f1",
+      "bild": "prenav.jpg",
+      "bildAlt": "PreNavs webbplats med rubriken Navigate before you press Enter och knappar för att ladda ner tillägget och prova demon.",
+      "beskrivning": [
+        "PreNav ersätter sidan för ny flik med ett sökfält som gissar vart du ska. Skriver du blo hamnar du på blocket.se och skriver du in kommer du till Instagram, utan att trycka Enter eller klicka på något.",
+        "Om ingen sajt matchar körs en vanlig sökning, och om flera ligger nära varandra visas en lista så att du får välja själv."
+      ],
+      "punkter": [
+        "Katalog med 220+ sajter, viktad för svenska användare.",
+        "Hoppar bara iväg när förstahandsvalet leder tydligt: minst 75 % av poängen och 1,5 gånger så mycket som tvåan.",
+        "Börjar du med ett mellanslag pausas den automatiska navigeringen.",
+        "Webbsida med en demo som jämför antalet tangenttryck mot Google."
+      ],
+      "teknik": ["JavaScript", "Chrome-tillägg", "HTML/CSS", "GitHub Pages"],
+      "lankar": [
+        { "etikett": "Prova demon", "url": "https://josefanderberg.github.io/predictive-nav/" },
+        { "etikett": "Koden på GitHub", "url": "https://github.com/josefanderberg/predictive-nav" }
+      ]
+    },
+    {
+      "slug": "tipsanalys",
+      "namn": "Tipsanalys",
+      "kort": "Analysverktyg för Stryktipset och Europatipset med riktig data.",
+      "ar": "2026",
+      "roll": "Eget projekt",
+      "status": "I drift",
+      "farg": "#1e3a5f",
+      "bild": "tipsanalys.jpg",
+      "bildAlt": "Tipsanalys startsida där man väljer mellan Stryktipset, Europatipset och NILLE och hämtar en ny omgång.",
+      "beskrivning": [
+        "Tipsanalys hämtar veckans omgång från Svenska Spels öppna API, räknar om oddsen till sannolikheter och väger in expertrader. Historiken byggs av sparade omgångar i en molndatabas, så analysen får bättre underlag ju mer den används.",
+        "Verktyget är mobilanpassat och använder bara riktig data. Odds som ännu inte är publicerade visas som ett streck i stället för påhittade siffror."
+      ],
+      "punkter": [
+        "Kuponganalys som markerar spikar, värdespel, möjliga skrällar och farliga favoriter.",
+        "Jämför valt spel med historik från den andra spelformen när underlaget är litet.",
+        "Katalog med reducerade system och riktig reduceringslogik."
+      ],
+      "teknik": ["React", "Vite", "Tailwind CSS", "Firestore"],
+      "lankar": [
+        { "etikett": "Öppna Tipsanalys", "url": "https://josefanderberg.github.io/stryktipsanalys/" },
+        { "etikett": "Koden på GitHub", "url": "https://github.com/josefanderberg/stryktipsanalys" }
+      ]
+    },
+    {
+      "slug": "movanta",
+      "namn": "Movanta",
+      "kort": "Klickbar prototyp för uthyrning av fordon mellan privatpersoner.",
+      "ar": "2026",
+      "roll": "Eget projekt",
+      "status": "Prototyp",
+      "farg": "#0f766e",
+      "bild": "movanta.jpg",
+      "bildAlt": "Movantas intro i 3D: en bil på en motorväg genom ett berglandskap i skymning, med en skylt mot Sundsvall och Movanta.",
+      "beskrivning": [
+        "Movanta är en prototyp för att hyra bilar, båtar, husbilar och släpvagnar av privatpersoner och företag i närheten. Den består av en tvåspråkig marknadssajt och en app med karta, bokningsflöde och kontrakt.",
+        "Allt sparas i webbläsaren, så hela flödet går att testa utan backend eller riktiga betalningar."
+      ],
+      "punkter": [
+        "Bokningsflöde med e-signering och kontrakt som PDF.",
+        "Karta med filter över 24 fordon i alla kategorier.",
+        "Annonsguide med priskalkylator, körkortsverifiering och adminpanel.",
+        "Intro i 3D byggd med Three.js."
+      ],
+      "teknik": ["Next.js", "React", "TypeScript", "Leaflet", "Three.js", "jsPDF"],
+      "lankar": [
+        { "etikett": "Prova prototypen", "url": "https://josefanderberg.github.io/movanta-transfer/" },
+        { "etikett": "Koden på GitHub", "url": "https://github.com/josefanderberg/movanta-transfer" }
+      ]
+    },
+    {
+      "slug": "tidskub",
+      "namn": "N4TN Tidskub",
+      "kort": "Videoredigerare i webbläsaren som gör film till en kub av tid.",
+      "ar": "2026",
+      "roll": "Eget projekt",
+      "status": "Experiment",
+      "farg": "#b45309",
+      "beskrivning": [
+        "Du laddar in en video och får tillbaka den som en låda där djupet är tiden. Alla bildrutor staplas på varandra, så det som rör sig blir synliga banor rakt genom lådan.",
+        "Allt körs i webbläsaren, och resultatet exporteras som en färdig film med originalljudet."
+      ],
+      "punkter": [
+        "Läget Rörelse visar skillnaden mellan bildrutor, så att stillastående bakgrund försvinner.",
+        "Ett tidssnitt glider genom lådan i takt med uppspelningen, och fler snitt kan skäras in längs alla axlar.",
+        "Kameran styrs med musen eller rör sig automatiskt.",
+        "Export som MP4 eller WebM."
+      ],
+      "teknik": ["JavaScript", "Three.js", "WebGL", "Vite"],
+      "lankar": [
+        { "etikett": "Koden på GitHub", "url": "https://github.com/josefanderberg/N4TN" }
+      ]
+    },
+    {
+      "slug": "nonotao",
+      "namn": "Nonotao",
+      "kort": "iPhone-app som lägger det du måste minnas direkt på låsskärmen.",
+      "ar": "2026",
+      "roll": "Eget projekt",
+      "status": "Experiment",
+      "farg": "#be185d",
+      "beskrivning": [
+        "Du skriver det du måste komma ihåg till imorgon, och appen ritar texten på din bakgrundsbild. Då ser du det varje gång du tittar på telefonen.",
+        "iOS låter inte appar byta bakgrundsbild själva. Därför sparar appen bilden i ett eget album, och en genväg i Genvägar sätter den som bakgrund automatiskt, till exempel varje kväll."
+      ],
+      "punkter": [
+        "Hybridlösning med app och Genvägar för att komma runt en begränsning i iOS.",
+        "Uppdelad i lager med egen databas i SwiftData."
+      ],
+      "teknik": ["Swift", "SwiftUI", "SwiftData", "Genvägar"],
+      "lankar": []
+    }
+  ],
+
+  "skolprojekt": [
+    {
+      "namn": "Bokningssystem",
+      "text": "Bokningssystem med ett API i ASP.NET Core och ett gränssnitt i Blazor, byggt på TUC Yrkeshögskola.",
+      "teknik": ["C#", "ASP.NET Core Web API", "Blazor"]
+    },
+    {
+      "namn": "Kodhuset AB",
+      "text": "Webbplats i Umbraco för det påhittade företaget Kodhuset AB, med egna dokumenttyper och roller för skribent och redaktör. Namnet på den här sidan kommer därifrån.",
+      "teknik": ["Umbraco 18", ".NET 10", "SQLite"]
+    }
+  ]
+}
